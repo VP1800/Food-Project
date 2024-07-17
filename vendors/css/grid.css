@@ -1,0 +1,34 @@
+.span-4-of-4{
+    width: 100%;
+}
+.span-3-of-4{
+    width: 74.6%;
+}
+.span-2-of-4{
+    width: 49.2%;
+}
+.span-1-of-4{
+    width: 23.8%;
+}
+/* Define the section-features class */
+.section-features {
+    /* Add some basic styling to the section */
+    background-color: #f7f7f7;
+    padding: 40px;
+  }
+  
+  /* Define the row class */
+  .row {
+    /* Make the row a flex container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* You can also add additional styles for different screen sizes */
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+  }
