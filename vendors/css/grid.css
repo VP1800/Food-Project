@@ -10,6 +10,15 @@
 .span-1-of-4{
     width: 23.8%;
 }
+.span-2-of-3 {
+  width: 66.67%;
+}
+.span-2-of-2{
+    width: 50.8%;
+}
+.span-2-of-4{
+    width: 51.2%;
+}
 /* Define the section-features class */
 .section-features {
     /* Add some basic styling to the section */
@@ -24,6 +33,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    /* margin-bottom: 20px; */
   }
   .col{
     flex: 1;
