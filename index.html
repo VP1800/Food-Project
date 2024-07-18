@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <link rel="stylesheet" href="resources/css/quiries.css">
 
 </head>
@@ -21,20 +20,20 @@
                 <img class="logo" src="resources/img/Logo.png" alt="">
             
                 <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign-up</a></li>
+                    <li><a href="#feature">Food delivery</a></li>
+                    <li><a href="#hiw">How it works</a></li>
+                    <li><a href="#city">Our cities</a></li>
+                    <li><a href="#signup">Sign-up</a></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye junk food<br>Hello super healthy food</h1>
-            <a class="btn btn-full" href="">I'm Hungry </a>
-            <a class="btn btn-ghost" href="">Show me more</a>
+            <a class="btn btn-full" href="#plans">I'm Hungry </a>
+            <a class="btn btn-ghost" href="#feature">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features" id="feature">
         <div>
             
             <h2>Get food fast - Not fast food</h2>
@@ -122,8 +121,7 @@
             </li>
         </ul>
     </section>
-    <br><br><br><br><br>
-    <section class="section-steps">
+    <section class="section-steps" id="hiw">
         <div>
             <h2>Hot it works &mdash; Simple as 1,2,3</h2>
         </div>
@@ -149,7 +147,7 @@
             </div>
         </div>  
     </section>
-    <section class="section-cities">
+    <section class="section-cities" id="city">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -259,7 +257,7 @@
             </div>
         </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans" id="plans">
         <div class="row">
             <div class="col span-1-of-3">
                 <div class="plan-box">
@@ -326,7 +324,7 @@
             </div>
         </div>
     </section>
-    <section class="section-form">
+    <section class="section-form" id="signup">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -363,7 +361,7 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="newsletter">Newsletter?</label>
+                        <label for="">Newsletter?</label>
                     </div>
                     <div class="col span-2-of-3">
                         <input type="checkbox" name="news" id="news" checked>
@@ -371,7 +369,7 @@
                 </div>
                 <div class="row">
                     <div class="col span-1-of-3">
-                        <label for="textarea">Drop a line</label>
+                        <label for="">Drop a line</label>
                     </div>
                     <div class="col span-2-of-3">
                         <textarea name="text" id="ta" cols="30" rows="10"></textarea>
@@ -412,7 +410,33 @@
             <p>Copyright &copy; 2015 by omnifood. All Rights Reserved</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>    
+</body>
 </html>
