@@ -49,34 +49,37 @@
                 <ion-icon class="icon-big" name="infinite-outline"></ion-icon>
                 <h3>Up to 365 days/year</h3>
                 <p>
-                    Never let your clients down. We work 365 days/year, what means your clients can order
-                    food from you everyday.
+                    Never cook again! We really mean that. Our subscription plans include up to 365 
+                    days/year coverage. You can also choose to order more flexibly if that's  your style.
                 </p>
             </div>
             <div class="col span-1-of-4 box">
                 <ion-icon class="icon-big" name="alarm-outline"></ion-icon>
                 <h3>Ready in 20 minutes</h3>
                 <p>
-                    You have no time to cook? We have. Your food is delivered within 20 minutes.
+                    You're only twenty minutes away from your delicious and super healthy meals delivered 
+                    right to your home.We work with the best chefs in each town to ensure that you're 100% happy.
                 </p>
             </div>
             <div class="col span-1-of-4 box">
                 <ion-icon class="icon-big" name="fast-food-outline"></ion-icon>
                 <h3>100% organic</h3>
                 <p>
-                    All our ingredients are organic and always fresh. We never freeze or reheat.
+                    All our vegetables are fresh organic and local. Animals are raised without added hormones or 
+                    antibiotics. Good for your health, the environment, and it also tastes better!
                 </p>
             </div>
             <div class="col span-1-of-4 box">
                 <ion-icon class="icon-big" name="cart-outline"></ion-icon>
                 <h3>Order Anything</h3>
                 <p>
-                    We don't limit your creativity, which means you can order anything you feel like.
+                    We don't  limit your creativity, which means you can order whatever you feel like. You can also 
+                    choose from our menu containing over 100 delicious meals. It's up to you!
                 </p>
             </div>
         </div>
     </section>
-    <section class="section-meals">
+    <section class="section-meals" data-aos="fade-in" data-aos-duration="2000">
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -122,13 +125,13 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps" id="hiw">
+    <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="2000">
         <div>
             <h2>Hot it works &mdash; Simple as 1,2,3</h2>
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img class="app-screen" src="resources/img/app-iPhone.png" alt="phone-image">
+                <img data-aos="slide-left" data-aos-duration="1000" class="app-screen" src="resources/img/app-iPhone.png" alt="phone-image">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -148,7 +151,7 @@
             </div>
         </div>  
     </section>
-    <section class="section-cities" id="city">
+    <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
@@ -227,7 +230,7 @@
             </div>
         </div>
     </section>
-    <section class="section-testimonials">
+    <section class="section-testimonials" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>Our customer can't live without us</h2>
         </div>
@@ -258,11 +261,11 @@
             </div>
         </div>
     </section>
-    <section class="section-plans" id="plans">
+    <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <div class="col span-1-of-3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ month</span></p>
                         <p class="plan-price-meal">That's only 13.905$ per meal</p>
@@ -283,7 +286,7 @@
             </div>
             <div class="col span-1-of-3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h3>Pro</h3>
                         <p class="plan-price">$399 <span>/ month</span></p>
                         <p class="plan-price-meal">That's only 13.905$ per meal</p>
@@ -304,7 +307,7 @@
             </div>
             <div class="col span-1-of-3">
                 <div class="plan-box">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
                         <h3>Starter</h3>
                         <p class="plan-price">$19 <span>/ meal</span></p>
                         <p class="plan-price-meal">&nbsp;</p>
@@ -325,7 +328,7 @@
             </div>
         </div>
     </section>
-    <section class="section-form" id="signup">
+    <section class="section-form" id="signup" data-aos="fade-in" data-aos-duration="2000">
         <div class="row">
             <h2>We're happy to hear from you</h2>
         </div>
@@ -412,6 +415,11 @@
         </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -438,6 +446,5 @@ $(document).ready(function(){
   });
 });
 </script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>    
 </body>
 </html>
