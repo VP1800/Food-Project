@@ -1,47 +1,46 @@
-.span-1-of-1{
-    width: 100%;
+
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
 }
-.span-1-of-3{
-    width: 74.6%;
+
+.span_1_of_2 {
+	width: 49.2%;
 }
-.span-1-of-2{
-    width: 49.2%;
+
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.span_3_of_3 {
+	width: 100%; 
 }
-.span-1-of-4{
-    width: 23.8%;
+
+.span_2_of_3 {
+	width: 66.13%; 
 }
-.span-2-of-3 {
-  width: 66.67%;
+
+.span_1_of_3 {
+	width: 32.26%; 
 }
-.span-2-of-2{
-    width: 50.8%;
+
+
+/*  GRID OF FOUR   ============================================================================= */
+
+	
+.span_4_of_4 {
+	width: 100%; 
 }
-.span-2-of-4{
-    width: 51.2%;
+
+.span_3_of_4 {
+	width: 74.6%; 
 }
-/* Define the section-features class */
-.section-features {
-    /* Add some basic styling to the section */
-    background-color: #f7f7f7;
-    padding: 40px;
-  }
-  
-  /* Define the row class */
-  .row {
-    /* Make the row a flex container */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 20px; */
-  }
-  .col{
-    flex: 1;
-  }
-  
-  /* You can also add additional styles for different screen sizes */
-  @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-    }
-  }
+
+.span_2_of_4 {
+	width: 49.2%; 
+}
+
+.span_1_of_4 {
+	width: 23.8%; 
+}

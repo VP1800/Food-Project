@@ -82,15 +82,24 @@ input[type=submit]{
     color: #fff;
 }
 .logo{
-    height: 100px;
+    /* height: 100px;
     width: auto;
     float: left;
-    margin-top: 20px;
+    margin-top: 20px; */
+    height: 50px;
+    margin: 20px;
 }
+nav {
+    display: flex; /* add this to make the nav a flex container */
+    align-items: center; /* vertically center the content */
+    justify-content: space-between; /* distribute the content evenly */
+  }
 .main-nav{
-    float: right;
+    /* float: right; */
     list-style: none;
-    margin-top: 55px;
+    /* margin-top: 55px; */
+    padding: 0;
+    margin: 0;
 
 }
 .main-nav li{
