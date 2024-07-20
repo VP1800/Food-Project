@@ -14,9 +14,17 @@ body{
     overflow-x: hidden;    
 }
 .row{
+    display: flex;
+  flex-wrap: wrap;
     max-width: 1140px;
     margin: 0 auto;
 }
+col { /*not used*/
+    flex: 1; /* make columns equal width */
+    flex-wrap: wrap;
+    padding: 0 auto; /* adjust the padding to your liking */
+  }
+  
 header{
     background-image: linear-gradient(rgba(0,0,0, 0.7),rgba(0,0,0, 0.7)),url('img/hero.jpg');
     background-attachment: fixed;
@@ -27,12 +35,13 @@ header{
 h1{
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fff; 
     font-size: 240%;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 3px;
+
 }
 .hero-text-box{
     position: absolute;
@@ -79,28 +88,24 @@ input[type=submit]{
 .btn-full:active,
 input[type=submit]{
     border: 1px solid #cf6d17;
-    color: #fff;
 }
 .logo{
-    /* height: 100px;
+    height: 100px;
     width: auto;
     float: left;
-    margin-top: 20px; */
-    height: 50px;
-    margin: 20px;
+    margin-top: 20px;
+    /* height: 50px;
+    margin: 20px; */
 }
-nav {
-    display: flex; /* add this to make the nav a flex container */
-    align-items: center; /* vertically center the content */
-    justify-content: space-between; /* distribute the content evenly */
-  }
+/* nav {
+    width: auto;
+    float: left;
+    margin-top: 20px;    
+} */
 .main-nav{
-    /* float: right; */
+    float: right;
     list-style: none;
-    /* margin-top: 55px; */
-    padding: 0;
-    margin: 0;
-
+    margin-top: 55px;
 }
 .main-nav li{
     display: inline-block;
@@ -136,7 +141,7 @@ h2::after{
     display: block;
     height: 2px;
     background-color: #e67e22;
-    content: "";
+    content: " ";
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
@@ -144,7 +149,7 @@ h2::after{
 .long-copy{
     line-height: 145%;
     width: 70%;
-    margin-left: auto;
+    margin-left: 15%;
 }
 .box{
     padding: 1%;
@@ -194,7 +199,7 @@ h3{
     
 }
 .clearfix{zoom: 1}
-.clearfix:afer{
+.clearfix::afer{
     content: '.';
     clear: both;
     display: block;
@@ -227,7 +232,7 @@ h3{
     color: #e67e22;
     border: 4px solid #e67e22;
     display: inline-block;
-    border-radius: 55px;
+    border-radius: 50%;
     height: 55px;
     width: 55px;
     text-align: center;
@@ -242,7 +247,7 @@ h3{
 .btn-app img{
     height: 50px;
     width: auto;
-    /* margin-right: 10px; */
+    margin-right: 10px;/*was commented*/
 }
 .btn-app:link,
 .btn-app:visited{
@@ -268,6 +273,7 @@ h3{
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
+    margin-right: 10px;/*not included*/
 }
 a:link,
 a:visited{
@@ -357,24 +363,24 @@ blockquote:before{
 }
 .contact-form{
     width: 60%;
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: 0 auto;
 }
-input[type="text"],
-input[type="email"],
-select {
+input[type=text],
+input[type=email],
+select,
+textarea{
     width: 100%;
     padding: 7px;
     border-radius: 3px;
     border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+    /* box-sizing: border-box;
+    margin-bottom: 10px; */
 }
 textarea{
     height: 100%;
 }
-input[type=checkbox]
-{
+input[type=checkbox]{
     margin: 10px 5px 10px 0;
 }
 footer{
@@ -416,11 +422,11 @@ footer p{
 .fb:hover{
     color: #3b5998;
 }
-.twitter:hover{
-    color: #00aced;
-}
 .google:hover{
     color: #dd4b39;
+}
+.twitter:hover{
+    color: #00aced;
 }
 .insta:hover{
     color: #517fa4;
