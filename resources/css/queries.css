@@ -17,7 +17,31 @@
     .row{padding: 0 2%;}
 }
 
-
+@media only screen and (max-width: 1084px) {
+    .extra-br {
+        margin-bottom: 1em; /* add an extra line break */
+      }
+}
+@media only screen and (max-width: 1023px) {
+    .extra-br {
+        margin-bottom: 0; 
+      }
+}
+@media only screen and (max-width: 936px) {
+    .extra-br {
+        margin-bottom: 1em; /* add an extra line break */
+      }
+}
+@media only screen and (max-width: 786px) {
+    .br-span {
+        margin-bottom: 4.5em; /* add an extra line break */
+      }
+}
+@media only screen and (max-width: 772px) {
+    .br-span {
+        margin-bottom: 5.5em; /* add an extra line break */
+      }
+}
 /* for small tablets to big tablets from 768 to 1023px */
 @media only screen and (max-width: 1023px) {
     .long-copy{
@@ -36,11 +60,11 @@
         margin-right: 5px;
     }
     .city-feature{font-size: 90%;}
-    .plan-box{
+    /* .plan-box{
         width: 100%;
         margin-left: 0%;
-    }
-    .plan-price{font-size: 250%;}
+    } */
+    /* .plan-price{font-size: 250%;} */
     .contact-form{width: 80%;}
 }
 
@@ -64,6 +88,9 @@
         padding: 4px;
         font-size: 120%;
     }
+    .br-span {
+        margin-bottom: 0em; /* add an extra line break */
+      }
     /* .works-step{margin-bottom: 20px;} */
     .works-step:last-of-type{margin-bottom: 20px;}
 }
