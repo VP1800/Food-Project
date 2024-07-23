@@ -93,20 +93,27 @@ input[type=submit]{
 .logo{
     height: 100px;
     width: auto;
-    float: left;
+    /* float: left; */
     margin-top: 20px;
-    /* height: 50px;
-    margin: 20px; */
+    /* height: 50px; */
+    /*margin: 20px; */
 }
-/* nav {
-    width: auto;
+nav {
+    /* width: auto;
     float: left;
-    margin-top: 20px;    
-} */
+    margin-top: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
 .main-nav{
-    float: right;
+    /* float: right; */
     list-style: none;
-    margin-top: 55px;
+    /* margin-top: 55px; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 .main-nav li{
     display: inline-block;
